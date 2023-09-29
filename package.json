@@ -1,28 +1,35 @@
 {
-  "license": "MIT",
   "name": "codewars-katas",
-  "description": "Codewars katas ark",
+  "description": "Codewars katas",
+  "license": "MIT",
+  "private": true,
   "author": {
-    "name": "Leonardo Galante",
-    "email": "lndgalante@gmail.com"
+    "name": "Vicente015",
+    "email": "me@vicente015.dev"
   },
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "moment": "^2.29.1",
-    "ramda": "^0.27.1"
+  "engines": {
+    "node": ">=18",
+    "pnpm": "8",
+    "typescript": ">=5.0.0",
+    "tsc": ">=5.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "@types/lodash": "^4.14.170",
-    "@types/moment": "^2.13.0",
-    "@types/ramda": "^0.27.42",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-jest": "^24.3.6",
-    "husky": "^4.2.5",
-    "jest": "^27.0.6",
-    "jest-extended": "^0.11.5",
-    "prettier": "^2.3.2",
-    "xo": "0.32.1"
+    "@tsconfig/node18": "^18.2.2",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.7.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-standard-with-typescript": "^39.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jest": "^27.4.0",
+    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-sort": "^2.10.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "jest": "^29.7.0",
+    "jest-extended": "^4.0.1",
+    "typescript": "^5.2.2"
   },
   "scripts": {
     "lint": "xo",
@@ -32,32 +39,10 @@
     "install-generator-deps": "cd ./lib/katas && npm install",
     "create-kata": "node --no-warnings ./lib/katas/kata-generator.js --link"
   },
-  "xo": {
-    "esnext": true,
-    "extends": [
-      "prettier",
-      "plugin:jest/recommended"
-    ],
-    "ignores": [
-      "lib"
-    ],
-    "rules": {
-      "jest/valid-title": 0,
-      "unicorn/no-reduce": 0,
-      "padding-line-between-statements": 0,
-      "unicorn/prefer-number-properties": 0,
-      "unicorn/no-fn-reference-in-iterator": 0
-    }
-  },
   "jest": {
     "testEnvironment": "node",
     "setupFilesAfterEnv": [
       "jest-extended"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run test"
-    }
   }
 }
