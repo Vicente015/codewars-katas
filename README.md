@@ -4,20 +4,6 @@
   Solutions for Codewars katas
 </h6>
 
-<p align="center">
-  <a href="https://github.com/sindresorhus/xo">
-    <img src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square">
-  </a>
-  <a href="https://github.com/prettier/prettier">
-    <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
-  </a>
-  <a href="https://david-dm.org/lndgalante/codewars-katas.svg">
-    <img src="https://david-dm.org/lndgalante/codewars-katas.svg?style=flat-square">
-  </a>
-  <a href="https://david-dm.org/lndgalante/codewars-katas/dev-status.svg">
-    <img src="https://david-dm.org/lndgalante/codewars-katas/dev-status.svg?style=flat-square">
-  </a>
-</p>
 
 ### Table of Contents
 
